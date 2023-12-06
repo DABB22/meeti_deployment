@@ -1,5 +1,5 @@
 node_modules
 .DS_Store
 variables.env
-# public/uploads/grupos/*
-# public/uploads/perfiles/*
+public/uploads/grupos/*
+public/uploads/perfiles/*
