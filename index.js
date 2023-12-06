@@ -12,6 +12,8 @@ const passport = require('./config/passport');
 const router = require('./routes');
 
 //* Configuración y Modelos BD
+// const sequelize = require('./config/db.js');
+// sequelize.authenticate().then(()=> console.log('Conexión exitosa')).catch(err => console.error('Conexión no establecida'));
 const db = require('./config/db.js');
     require('./models/Usuarios.js');
     require('./models/Categorias.js');
