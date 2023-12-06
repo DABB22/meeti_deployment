@@ -1,7 +1,8 @@
 
 const Sequelize = require('sequelize');
 const db = require('../config/db.js');
-const uuid = require('uuid/v4'); // para crear id unicos
+// const uuid = require('uuid/v4'); // para crear id unicos
+const uuid = require('uuid'); // para crear id unicos
 const slug = require('slug'); // para crear las url
 const shortid = require('shortid'); // para crear un id corto
 

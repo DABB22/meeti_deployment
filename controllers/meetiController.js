@@ -1,8 +1,9 @@
 
-const Grupos = require('../models/Grupos');
-const Meeti = require('../models/Meeti');
+const Grupos = require('../models/Grupos.js');
+const Meeti = require('../models/Meeti.js');
 
-const uuid = require('uuid/v4');
+// const uuid = require('uuid/v4');
+const uuid = require('uuid');
 
 // Muestra el formulario para nuevos Meeti
 exports.formNuevoMeeti = async (req, res) => {

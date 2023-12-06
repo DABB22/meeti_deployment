@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-const emailConfig = require('../config/emails');
+const emailConfig = require('../config/emails.js');
 const fs = require('fs'); // filesystem es lo que nos va a permitir acceder a los archivos y a sus contenidos - utilidad que ya existe en node
 const util = require('util'); // 
 const ejs = require('ejs'); // tiene una función que nos va a permitir compilar un archivo y crear/generar lo que es el email.

@@ -1,5 +1,5 @@
-const Usuarios = require('../models/Usuarios');
-const enviarEmail = require('../handlers/emails');
+const Usuarios = require('../models/Usuarios.js');
+const enviarEmail = require('../handlers/emails.js');
 
 const multer = require('multer');
 const shortid = require('shortid');

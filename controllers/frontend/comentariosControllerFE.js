@@ -1,5 +1,5 @@
-const Comentarios = require('../../models/Comentarios');
-const Meeti = require('../../models/Meeti');
+const Comentarios = require('../../models/Comentarios.js');
+const Meeti = require('../../models/Meeti.js');
 
 exports.agregarComentario = async (req, res, next) => {
     // obtener el comentario

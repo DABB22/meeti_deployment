@@ -2,7 +2,7 @@
 const Sequelize = require('sequelize');
 // importamos la base de datos para que sepa a qué base de datos se va crear (el modelo)
 const db = require('../config/db.js');
-const bcrypt = require('bcrypt-nodejs');
+const bcrypt = require('bcrypt');
 
 const Usuarios = db.define('usuarios', {
     id: {

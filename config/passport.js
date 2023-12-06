@@ -2,7 +2,7 @@
 
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy; // este te permite iniciar sesión con un usuario y un password de una BD
-const Usuarios = require('../models/Usuarios'); // modelo de usuarios donde van a obtener los registros
+const Usuarios = require('../models/Usuarios.js'); // modelo de usuarios donde van a obtener los registros
 
 passport.use(new LocalStrategy({
         usernameField : 'email',

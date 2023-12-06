@@ -1,6 +1,6 @@
-const Meeti = require('../../models/Meeti');
-const Grupos = require('../../models/Grupos');
-const Usuarios = require('../../models/Usuarios');
+const Meeti = require('../../models/Meeti.js');
+const Grupos = require('../../models/Grupos.js');
+const Usuarios = require('../../models/Usuarios.js');
 
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;

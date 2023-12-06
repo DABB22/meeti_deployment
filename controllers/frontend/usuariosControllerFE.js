@@ -1,5 +1,5 @@
-const Usuarios = require('../../models/Usuarios');
-const Grupos = require('../../models/Grupos')
+const Usuarios = require('../../models/Usuarios.js');
+const Grupos = require('../../models/Grupos.js')
 
 
 exports.mostrarUsuario = async (req, res, next) => {

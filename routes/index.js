@@ -3,18 +3,18 @@
 const express = require('express');
 const router = express.Router(); // creamos el route con el metodo.
 
-const homeController = require('../controllers/homeController');
-const usuariosController = require('../controllers/usuariosController');
-const authController = require('../controllers/authController');
-const adminController = require('../controllers/adminController');
-const gruposController = require('../controllers/gruposController');
-const meetiController = require('../controllers/meetiController');
+const homeController = require('../controllers/homeController.js');
+const usuariosController = require('../controllers/usuariosController.js');
+const authController = require('../controllers/authController.js');
+const adminController = require('../controllers/adminController.js');
+const gruposController = require('../controllers/gruposController.js');
+const meetiController = require('../controllers/meetiController.js');
 
-const meetiControllerFE  = require('../controllers/frontend/meetiControllerFE');
-const usuariosControllerFE  = require('../controllers/frontend/usuariosControllerFE');
-const gruposControllerFE  = require('../controllers/frontend/gruposControllerFE');
-const comentariosControllerFE  = require('../controllers/frontend/comentariosControllerFE');
-const busquedaControllerFE  = require('../controllers/frontend/busquedaControllerFE');
+const meetiControllerFE  = require('../controllers/frontend/meetiControllerFE.js');
+const usuariosControllerFE  = require('../controllers/frontend/usuariosControllerFE.js');
+const gruposControllerFE  = require('../controllers/frontend/gruposControllerFE.js');
+const comentariosControllerFE  = require('../controllers/frontend/comentariosControllerFE.js');
+const busquedaControllerFE  = require('../controllers/frontend/busquedaControllerFE.js');
 
 module.exports = function() {
 

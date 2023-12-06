@@ -1,7 +1,8 @@
 
 const Sequelize = require('sequelize');
 const db = require('../config/db.js');
-const uuid = require('uuid/v4');
+// const uuid = require('uuid/v4');
+const uuid = require('uuid');
 const Categorias = require('./Categorias.js');
 const Usuarios = require('./Usuarios.js');
 

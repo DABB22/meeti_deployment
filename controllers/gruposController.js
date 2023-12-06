@@ -1,11 +1,12 @@
 
-const Categorias = require('../models/Categorias');
-const Grupos = require('../models/Grupos');
+const Categorias = require('../models/Categorias.js');
+const Grupos = require('../models/Grupos.js');
 
 const multer = require('multer');
 const shortid = require('shortid');
 const fs = require('fs');
-const uuid = require('uuid/v4');
+// const uuid = require('uuid/v4');
+const uuid = require('uuid');
 
 const configuracionMulter = {
     limits : { fileSize : 100000 }, // 100kbytes
