@@ -12,13 +12,13 @@ const passport = require('./config/passport');
 const router = require('./routes');
 
 //* Configuración y Modelos BD
-const db = require('./config/db');
-    require('./models/Usuarios');
-    require('./models/Categorias');
-    require('./models/Comentarios');
-    require('./models/Grupos');
-    require('./models/Meeti');
-db.sync().then(() => console.log('DB Conectada')).catch((error) => console.log(error));
+const db = require('./config/db.js');
+    require('./models/Usuarios.js');
+    require('./models/Categorias.js');
+    require('./models/Comentarios.js');
+    require('./models/Grupos.js');
+    require('./models/Meeti.js');
+db.sync().then(() => console.log('DataBase Conectada')).catch((error) => console.log(error));
 
 //* Variables de Desarrollo
 require('dotenv').config({path: 'variables.env'});
@@ -78,8 +78,8 @@ app.use('/', router());
 // });
 
 //leer el host y el puerto
-const host = process.env.HOST || '0.0.0.0';
+// const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 5000;
-app.listen(port, host, () => {
+app.listen(port, () => {
     console.log('El servidor esta funcionando en el puerto', port);
 });
