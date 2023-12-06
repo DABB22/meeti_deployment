@@ -80,6 +80,7 @@ app.use('/', router());
 //leer el host y el puerto
 const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 5000;
-app.listen(port, () => {
+app.listen(port, host, () => {
     console.log('El servidor esta funcionando en el puerto', port);
+    console.log('El host es ', host);
 });
