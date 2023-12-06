@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
-const db = require('../config/db');
-const Usuarios = require('./Usuarios');
-const Meeti = require('./Meeti');
+const db = require('../config/db.js');
+const Usuarios = require('./Usuarios.js');
+const Meeti = require('./Meeti.js');
 
 const Comentarios = db.define('comentario', {
     id: {

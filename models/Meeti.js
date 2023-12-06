@@ -1,12 +1,12 @@
 
 const Sequelize = require('sequelize');
-const db = require('../config/db');
+const db = require('../config/db.js');
 const uuid = require('uuid/v4'); // para crear id unicos
 const slug = require('slug'); // para crear las url
 const shortid = require('shortid'); // para crear un id corto
 
-const Usuarios = require('../models/Usuarios');
-const Grupos = require('../models/Grupos');
+const Usuarios = require('../models/Usuarios.js');
+const Grupos = require('../models/Grupos.js');
 
 
 const Meeti = db.define(

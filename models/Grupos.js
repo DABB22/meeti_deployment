@@ -1,9 +1,9 @@
 
 const Sequelize = require('sequelize');
-const db = require('../config/db');
+const db = require('../config/db.js');
 const uuid = require('uuid/v4');
-const Categorias = require('./Categorias');
-const Usuarios = require('./Usuarios');
+const Categorias = require('./Categorias.js');
+const Usuarios = require('./Usuarios.js');
 
 const Grupos = db.define('grupos', {
     id: {
